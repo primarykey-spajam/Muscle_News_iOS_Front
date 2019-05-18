@@ -16,7 +16,7 @@
 		7890E4EF8BFD59BF6CC053C9 /* Pods_muscle_news_iOS_frontUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A134ED66C8F4341B52F26D4 /* Pods_muscle_news_iOS_frontUITests.framework */; };
 		84883C0222901988001C42BE /* StartGym.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84883C0122901988001C42BE /* StartGym.storyboard */; };
 		84883C04229019A0001C42BE /* StartGymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C03229019A0001C42BE /* StartGymViewController.swift */; };
-		84883C06229044AE001C42BE /* ReadingSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C05229044AE001C42BE /* ReadingSound.swift */; };
+		84883C06229044AE001C42BE /* AVAudioPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */; };
 		84883C082290513A001C42BE /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84883C072290513A001C42BE /* test.mp3 */; };
 		84883C0A229055E4001C42BE /* TrainingJudgement_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */; };
 		84A36DE822905D9C005F98EB /* TrainingJudgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A36DE722905D9C005F98EB /* TrainingJudgement.swift */; };
@@ -58,7 +58,7 @@
 		65A639803A8745134CD10D3E /* Pods_muscle_news_iOS_front.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle_news_iOS_front.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84883C0122901988001C42BE /* StartGym.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartGym.storyboard; sourceTree = "<group>"; };
 		84883C03229019A0001C42BE /* StartGymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGymViewController.swift; sourceTree = "<group>"; };
-		84883C05229044AE001C42BE /* ReadingSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingSound.swift; sourceTree = "<group>"; };
+		84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayerUtil.swift; sourceTree = "<group>"; };
 		84883C072290513A001C42BE /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test.mp3; path = ../../../Desktop/test.mp3; sourceTree = "<group>"; };
 		84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingJudgement_demo.swift; sourceTree = "<group>"; };
 		84A36DE722905D9C005F98EB /* TrainingJudgement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingJudgement.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				84BBC8B32290034D009B9B95 /* Info.plist */,
 				84883C0122901988001C42BE /* StartGym.storyboard */,
 				84883C03229019A0001C42BE /* StartGymViewController.swift */,
-				84883C05229044AE001C42BE /* ReadingSound.swift */,
+				84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */,
 				84883C072290513A001C42BE /* test.mp3 */,
 				84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */,
 			);
@@ -354,7 +354,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -371,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6ADD314EC1415E98A59D1ED6 /* [CP] Check Pods Manifest.lock */ = {
@@ -398,7 +398,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-muscle_news_iOS_frontTests/Pods-muscle_news_iOS_frontTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-muscle_news_iOS_frontTests/Pods-muscle_news_iOS_frontTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
@@ -411,7 +411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-muscle_news_iOS_frontTests/Pods-muscle_news_iOS_frontTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-muscle_news_iOS_frontTests/Pods-muscle_news_iOS_frontTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9C6C0BA7EBB7F6E36426641 /* [CP] Check Pods Manifest.lock */ = {
@@ -440,7 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BBC8AA2290034C009B9B95 /* ViewController.swift in Sources */,
-				84883C06229044AE001C42BE /* ReadingSound.swift in Sources */,
+				84883C06229044AE001C42BE /* AVAudioPlayerUtil.swift in Sources */,
 				0D5C873D22906CF9002E45E1 /* ApiClient.swift in Sources */,
 				84883C04229019A0001C42BE /* StartGymViewController.swift in Sources */,
 				84A36DE822905D9C005F98EB /* TrainingJudgement.swift in Sources */,
