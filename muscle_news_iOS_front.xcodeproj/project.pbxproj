@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53F7F10822900BC2005798C7 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F7F10722900BC2005798C7 /* Question.storyboard */; };
 		84BBC8A82290034C009B9B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC8A72290034C009B9B95 /* AppDelegate.swift */; };
 		84BBC8AA2290034C009B9B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC8A92290034C009B9B95 /* ViewController.swift */; };
-		84BBC8AD2290034C009B9B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BBC8AB2290034C009B9B95 /* Main.storyboard */; };
 		84BBC8AF2290034D009B9B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBC8AE2290034D009B9B95 /* Assets.xcassets */; };
 		84BBC8B22290034D009B9B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BBC8B02290034D009B9B95 /* LaunchScreen.storyboard */; };
 		84BBC8BD2290034E009B9B95 /* muscle_news_iOS_frontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC8BC2290034E009B9B95 /* muscle_news_iOS_frontTests.swift */; };
@@ -34,10 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53F7F10722900BC2005798C7 /* Question.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Question.storyboard; sourceTree = "<group>"; };
 		84BBC8A42290034C009B9B95 /* muscle_news_iOS_front.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle_news_iOS_front.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BBC8A72290034C009B9B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BBC8A92290034C009B9B95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84BBC8AC2290034C009B9B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BBC8AE2290034D009B9B95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BBC8B12290034D009B9B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BBC8B32290034D009B9B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		84BBC8A62290034C009B9B95 /* muscle_news_iOS_front */ = {
 			isa = PBXGroup;
 			children = (
+				53F7F10722900BC2005798C7 /* Question.storyboard */,
 				84BBC8A72290034C009B9B95 /* AppDelegate.swift */,
 				84BBC8A92290034C009B9B95 /* ViewController.swift */,
-				84BBC8AB2290034C009B9B95 /* Main.storyboard */,
 				84BBC8AE2290034D009B9B95 /* Assets.xcassets */,
 				84BBC8B02290034D009B9B95 /* LaunchScreen.storyboard */,
 				84BBC8B32290034D009B9B95 /* Info.plist */,
@@ -231,7 +231,7 @@
 			files = (
 				84BBC8B22290034D009B9B95 /* LaunchScreen.storyboard in Resources */,
 				84BBC8AF2290034D009B9B95 /* Assets.xcassets in Resources */,
-				84BBC8AD2290034C009B9B95 /* Main.storyboard in Resources */,
+				53F7F10822900BC2005798C7 /* Question.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84BBC8AB2290034C009B9B95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BBC8AC2290034C009B9B95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84BBC8B02290034D009B9B95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
