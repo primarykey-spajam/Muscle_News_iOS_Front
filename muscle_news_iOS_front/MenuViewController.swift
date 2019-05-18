@@ -16,11 +16,6 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        var StartGymviewcontroller = segue.destination as! StartGymViewController
-        StartGymviewcontroller.text1 = "Text"
-    }
 
     /*
     // MARK: - Navigation
