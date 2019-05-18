@@ -4,11 +4,11 @@
 //
 //  Created by 助永悠輝 on 2019/05/18.
 //  Copyright © 2019 admin. All rights reserved.
-//
 
 
 import UIKit
 
+//終了した後もインスタンスが残っている
 class TrainingJudgement {
     let myDevice: UIDevice = UIDevice.current
     var muscleMenu: String
@@ -22,6 +22,9 @@ class TrainingJudgement {
         self.muscleMenu = muscleMenu
         self.stateArray = []
         self.startGymVC = gymVC
+        AVAudioPlayerUtil.setValue(url: "http://www.voice-pro.jp/announce/mp3/001-sibutomo.mp3")
+        AVAudioPlayerUtil.play()
+        
         //self.readingSound = ReadingSound()
         // 0.5秒ごとにstartTimer()を呼ぶタイマー
         //var timer: Timer!
@@ -61,13 +64,13 @@ class TrainingJudgement {
             //音楽とめる
             print("サボり")
             startGymVC.testLabel.text = "サボり"
-            //readingSound.stopNews()
+            AVAudioPlayerUtil.pause()
             
         } else {
             //音楽止まってたら、1再生
             print("サボってない")
             startGymVC.testLabel.text = "サボってない"
-            //readingSound.playNews()
+            AVAudioPlayerUtil.play()
         }
         self.stateArray = []
     }
