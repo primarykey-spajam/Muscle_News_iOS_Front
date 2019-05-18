@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,9 +46,6 @@
                                 <rect key="frame" x="42" y="187" width="94" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Running"/>
-                                <connections>
-                                    <segue destination="SrI-bd-2XZ" kind="show" id="g1i-bA-9qm"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,14 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G42-3I-JVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="70.614692653673174"/>
-        </scene>
-        <!--StartGym-->
-        <scene sceneID="eXy-3R-ZGU">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StartGym" id="SrI-bd-2XZ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gf2-uJ-v8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="473" y="-49"/>
         </scene>
     </scenes>
 </document>
