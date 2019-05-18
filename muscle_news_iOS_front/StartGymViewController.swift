@@ -12,6 +12,8 @@ class StartGymViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //text1に値がはいる
+        TrainingJudgement(muscleMenu: "pushup", gymVC: self)
 
         // Do any additional setup after loading the view.
     }

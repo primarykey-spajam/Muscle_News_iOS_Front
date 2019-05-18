@@ -12,12 +12,20 @@ import UIKit
 class TrainingJudgement {
     let myDevice: UIDevice = UIDevice.current
     var muscleMenu: String
+    var stateArray: [Bool]
+    var startGymVC: StartGymViewController
+    //var readingSound: ReadingSound
 
-    init(muscleMenu: String) {
+    init(muscleMenu: String, gymVC: StartGymViewController) {
         //近接センサーを有効にする
         myDevice.isProximityMonitoringEnabled = true
         self.muscleMenu = muscleMenu
-        //近接センサーの通知設定
+        self.stateArray = []
+        self.startGymVC = gymVC
+        //self.readingSound = ReadingSound()
+        // 0.5秒ごとにstartTimer()を呼ぶタイマー
+        //var timer: Timer!
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.checkMenuState), userInfo: nil, repeats: true)
         NotificationCenter.default
             .addObserver(
                 self,
@@ -34,15 +42,46 @@ class TrainingJudgement {
     }
     
     //近接センサーの値が変更されたら呼ばれる関数
-    @objc func proximitySensorStateDidChange() -> Bool{
+    // 呼び出されない時間が一定になったら筋トレしていないと扱う
+    //schejuledtimer
+    func isSameValueArray(array: Array<Bool>) -> Bool {
+        let orderedSet: NSOrderedSet = NSOrderedSet(array: self.stateArray)
+        // 再度Arrayに戻す
+        self.stateArray = orderedSet.array as! [Bool]
+        if(self.stateArray.count <= 1) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    @objc func checkMenuState(){
+        print(self.stateArray)
+        if(isSameValueArray(array: stateArray)) {
+            //音楽とめる
+            print("サボり")
+            startGymVC.testLabel.text = "サボり"
+            //readingSound.stopNews()
+            
+        } else {
+            //音楽止まってたら、1再生
+            print("サボってない")
+            startGymVC.testLabel.text = "サボってない"
+            //readingSound.playNews()
+        }
+        self.stateArray = []
+    }
+    @objc func proximitySensorStateDidChange(){
+        //timer管理
         if myDevice.proximityState == true {
             //近づいた時
             print("近い")
-            return true
+            
+            self.stateArray.append(true)
         }else{
             //離れた時
             print("遠い")
-            return false
+            self.stateArray.append(false)
         }
     }
 }

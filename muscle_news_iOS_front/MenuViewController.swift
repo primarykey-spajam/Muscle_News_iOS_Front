@@ -18,8 +18,8 @@ class MenuViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        var ReadingSound = segue.destination as! ReadingSound
-        ReadingSound.text1 = "Text"
+        var StartGym = segue.destination as! StartGymViewController
+        StartGym.text1 = "Text"
     }
 
     /*

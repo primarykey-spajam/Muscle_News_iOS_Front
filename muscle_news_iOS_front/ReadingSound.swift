@@ -18,9 +18,9 @@ class ReadingSound: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let TrainingJudgement =  TrainingJudgement_demo()
+        //let TrainingJudgement =  TrainingJudgement()
         
-        if(TrainingJudgement.A(name: text1 as! String)) { playSound(name: "test") }
+        //if(TrainingJudgement.(name: text1 as! String)) { playSound(name: "test") }
     }
 
 }
@@ -28,7 +28,7 @@ class ReadingSound: UIViewController {
 extension ReadingSound: AVAudioPlayerDelegate {
     func playSound(name: String) {
         print(name)
-        guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
+        /*guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
             print("音源ファイルが見つかりません")
             return
         }
@@ -39,6 +39,6 @@ extension ReadingSound: AVAudioPlayerDelegate {
             audioPlayer.delegate = self
             audioPlayer.play()
         } catch {
-        }
+        }*/
     }
 }
