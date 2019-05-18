@@ -18,13 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnk-v4-wjT">
-                                <rect key="frame" x="146" y="63" width="83" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="腕立て伏せ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnk-v4-wjT">
+                                <rect key="frame" x="95" y="58" width="184" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arm" translatesAutoresizingMaskIntoConstraints="NO" id="3xv-aF-TM8">
+                                <rect key="frame" x="69" y="108" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEH-z7-goa">
+                                <rect key="frame" x="0.0" y="311" width="382" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">スマホを顎の真下に置いて腕立て伏せをしましょう ・スマホに顔が触れるくらい深く落としましょう</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm6-Ne-vlX">
+                                <rect key="frame" x="48" y="509" width="278" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Finish" image="FinishButton"/>
+                                <connections>
+                                    <segue destination="z7a-as-G8p" kind="show" id="mSg-jB-7qD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gqM-Jf-Zn4"/>
@@ -35,7 +55,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3O-kh-wo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="54"/>
+            <point key="canvasLocation" x="60" y="53.523238380809602"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="Psf-nH-Lra">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="z7a-as-G8p" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7B-yl-9qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="-128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arm" width="293" height="117"/>
+        <image name="FinishButton" width="276" height="78"/>
+    </resources>
 </document>
