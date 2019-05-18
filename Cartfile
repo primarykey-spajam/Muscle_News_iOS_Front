@@ -1,3 +1,2 @@
 github "Alamofire/Alamofire"
-github "ReactiveX/RxSwift"
-github "tristanhimmelman/ObjectMapper"
+github "realm/realm-cocoa"
