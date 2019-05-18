@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  StartGymViewController.swift
 //  muscle_news_iOS_front
 //
 //  Created by admin on 2019/05/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class StartGymViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +16,9 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        var StartGymviewcontroller = segue.destination as! StartGymViewController
-        StartGymviewcontroller.text1 = "Text"
-    }
-
+    @IBOutlet weak var testLabel: UILabel!
+    var text1: String?
+    
     /*
     // MARK: - Navigation
 
