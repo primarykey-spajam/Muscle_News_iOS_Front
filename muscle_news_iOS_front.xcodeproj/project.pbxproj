@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		0D5C873C22906CF9002E45E1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C873A22906CF9002E45E1 /* Api.swift */; };
 		0D5C873D22906CF9002E45E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C873B22906CF9002E45E1 /* ApiClient.swift */; };
+		53023F7F2290E33B002A4685 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53023F7E2290E33B002A4685 /* Category.storyboard */; };
+		53023F812290F656002A4685 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53023F802290F656002A4685 /* CategoryViewController.swift */; };
 		5302F504229016E10006473E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302F503229014B80006473E /* MenuViewController.swift */; };
 		5302F505229016E50006473E /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5302F502229014A30006473E /* Menu.storyboard */; };
 		53F7F10822900BC2005798C7 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F7F10722900BC2005798C7 /* Question.storyboard */; };
+		53FB458F2290A18800EBB6A9 /* Squat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB458E2290A18700EBB6A9 /* Squat.storyboard */; };
+		53FB45912290A25E00EBB6A9 /* SquatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB45902290A25E00EBB6A9 /* SquatViewController.swift */; };
 		6A5F737D64FF5B02248805C7 /* Pods_muscle_news_iOS_frontTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AE842C8423FE7FD66115D4 /* Pods_muscle_news_iOS_frontTests.framework */; };
 		7890E4EF8BFD59BF6CC053C9 /* Pods_muscle_news_iOS_frontUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A134ED66C8F4341B52F26D4 /* Pods_muscle_news_iOS_frontUITests.framework */; };
 		84883C0222901988001C42BE /* StartGym.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84883C0122901988001C42BE /* StartGym.storyboard */; };
 		84883C04229019A0001C42BE /* StartGymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C03229019A0001C42BE /* StartGymViewController.swift */; };
 		84883C06229044AE001C42BE /* AVAudioPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */; };
-		84883C082290513A001C42BE /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84883C072290513A001C42BE /* test.mp3 */; };
-		84883C0A229055E4001C42BE /* TrainingJudgement_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */; };
 		84A36DE822905D9C005F98EB /* TrainingJudgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A36DE722905D9C005F98EB /* TrainingJudgement.swift */; };
 		84BBC8A82290034C009B9B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC8A72290034C009B9B95 /* AppDelegate.swift */; };
 		84BBC8AA2290034C009B9B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC8A92290034C009B9B95 /* ViewController.swift */; };
@@ -51,16 +53,18 @@
 		0D5C873B22906CF9002E45E1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		1A134ED66C8F4341B52F26D4 /* Pods_muscle_news_iOS_frontUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle_news_iOS_frontUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A693D7A508DDAF8DB6373BF /* Pods-muscle_news_iOS_front.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle_news_iOS_front.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front.debug.xcconfig"; sourceTree = "<group>"; };
+		53023F7E2290E33B002A4685 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		53023F802290F656002A4685 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		5302F502229014A30006473E /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		5302F503229014B80006473E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		53F7F10722900BC2005798C7 /* Question.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Question.storyboard; sourceTree = "<group>"; };
+		53FB458E2290A18700EBB6A9 /* Squat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Squat.storyboard; sourceTree = "<group>"; };
+		53FB45902290A25E00EBB6A9 /* SquatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatViewController.swift; sourceTree = "<group>"; };
 		5C67B006489D71AA70B04632 /* Pods-muscle_news_iOS_front.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle_news_iOS_front.release.xcconfig"; path = "Pods/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front.release.xcconfig"; sourceTree = "<group>"; };
 		65A639803A8745134CD10D3E /* Pods_muscle_news_iOS_front.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle_news_iOS_front.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84883C0122901988001C42BE /* StartGym.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartGym.storyboard; sourceTree = "<group>"; };
 		84883C03229019A0001C42BE /* StartGymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGymViewController.swift; sourceTree = "<group>"; };
 		84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayerUtil.swift; sourceTree = "<group>"; };
-		84883C072290513A001C42BE /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test.mp3; path = ../../../Desktop/test.mp3; sourceTree = "<group>"; };
-		84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingJudgement_demo.swift; sourceTree = "<group>"; };
 		84A36DE722905D9C005F98EB /* TrainingJudgement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingJudgement.swift; sourceTree = "<group>"; };
 		84BBC8A42290034C009B9B95 /* muscle_news_iOS_front.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muscle_news_iOS_front.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BBC8A72290034C009B9B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,9 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				84A36DE722905D9C005F98EB /* TrainingJudgement.swift */,
+				53FB458E2290A18700EBB6A9 /* Squat.storyboard */,
 				53F7F10722900BC2005798C7 /* Question.storyboard */,
 				5302F503229014B80006473E /* MenuViewController.swift */,
 				5302F502229014A30006473E /* Menu.storyboard */,
+				53023F7E2290E33B002A4685 /* Category.storyboard */,
+				53023F802290F656002A4685 /* CategoryViewController.swift */,
+				53FB45902290A25E00EBB6A9 /* SquatViewController.swift */,
 				0D5C873A22906CF9002E45E1 /* Api.swift */,
 				0D5C873B22906CF9002E45E1 /* ApiClient.swift */,
 				84BBC8A72290034C009B9B95 /* AppDelegate.swift */,
@@ -171,8 +179,6 @@
 				84883C0122901988001C42BE /* StartGym.storyboard */,
 				84883C03229019A0001C42BE /* StartGymViewController.swift */,
 				84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */,
-				84883C072290513A001C42BE /* test.mp3 */,
-				84883C09229055E4001C42BE /* TrainingJudgement_demo.swift */,
 			);
 			path = muscle_news_iOS_front;
 			sourceTree = "<group>";
@@ -306,8 +312,9 @@
 			files = (
 				84BBC8B22290034D009B9B95 /* LaunchScreen.storyboard in Resources */,
 				84883C0222901988001C42BE /* StartGym.storyboard in Resources */,
-				84883C082290513A001C42BE /* test.mp3 in Resources */,
 				84BBC8AF2290034D009B9B95 /* Assets.xcassets in Resources */,
+				53023F7F2290E33B002A4685 /* Category.storyboard in Resources */,
+				53FB458F2290A18800EBB6A9 /* Squat.storyboard in Resources */,
 				53F7F10822900BC2005798C7 /* Question.storyboard in Resources */,
 				5302F505229016E50006473E /* Menu.storyboard in Resources */,
 			);
@@ -439,15 +446,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53023F812290F656002A4685 /* CategoryViewController.swift in Sources */,
 				84BBC8AA2290034C009B9B95 /* ViewController.swift in Sources */,
 				84883C06229044AE001C42BE /* AVAudioPlayerUtil.swift in Sources */,
 				0D5C873D22906CF9002E45E1 /* ApiClient.swift in Sources */,
 				84883C04229019A0001C42BE /* StartGymViewController.swift in Sources */,
 				84A36DE822905D9C005F98EB /* TrainingJudgement.swift in Sources */,
 				5302F504229016E10006473E /* MenuViewController.swift in Sources */,
-				84883C0A229055E4001C42BE /* TrainingJudgement_demo.swift in Sources */,
 				0D5C873C22906CF9002E45E1 /* Api.swift in Sources */,
 				84BBC8A82290034C009B9B95 /* AppDelegate.swift in Sources */,
+				53FB45912290A25E00EBB6A9 /* SquatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +624,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XSMX25A839;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = muscle_news_iOS_front/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XSMX25A839;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = muscle_news_iOS_front/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
