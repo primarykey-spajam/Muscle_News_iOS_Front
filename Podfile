@@ -10,6 +10,7 @@ target 'muscle_news_iOS_front' do
     pod 'ObjectMapper'
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'SwiftyJSON'
 
   target 'muscle_news_iOS_frontTests' do
     inherit! :search_paths

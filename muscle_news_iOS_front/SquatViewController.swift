@@ -14,6 +14,7 @@ class SquatViewController: UIViewController {
     var acceleX: Double = 0
     var acceleY: Double = 0
     var acceleZ: Double = 0
+    var total:Double = 0
     let Alpha = 0.4
     var flg: Bool = false
     let motionManager = CMMotionManager()

@@ -7,6 +7,7 @@
 
 
 import UIKit
+import RxSwift
 
 //終了した後もインスタンスが残っている
 class TrainingJudgement {
@@ -15,6 +16,9 @@ class TrainingJudgement {
     var stateArray: [Bool]
     var startGymVC: StartGymViewController
     //var readingSound: ReadingSound
+    var timer: Timer!
+    
+    let disposeBag = DisposeBag()
 
     init(muscleMenu: String, gymVC: StartGymViewController) {
         //近接センサーを有効にする
@@ -22,16 +26,9 @@ class TrainingJudgement {
         self.muscleMenu = muscleMenu
         self.stateArray = []
         self.startGymVC = gymVC
-       
-        //get News
-            
-        AVAudioPlayerUtil.setValue(url: "http://www.voice-pro.jp/announce/mp3/001-sibutomo.mp3")
-        AVAudioPlayerUtil.play()
         
         //self.readingSound = ReadingSound()
-        // 0.5秒ごとにstartTimer()を呼ぶタイマー
-        //var timer: Timer!
-        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.checkMenuState), userInfo: nil, repeats: true)
+
         NotificationCenter.default
             .addObserver(
                 self,
@@ -45,6 +42,16 @@ class TrainingJudgement {
                 name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"),
                 object: nil
         )
+    }
+    
+    func destroy() {
+        timer.invalidate()
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func setUpAudio(url: String){
+        AVAudioPlayerUtil.setValue(url: url)
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.checkMenuState), userInfo: nil, repeats: true)
     }
     
     //近接センサーの値が変更されたら呼ばれる関数
