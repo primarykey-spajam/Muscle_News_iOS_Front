@@ -32,6 +32,7 @@ class StartGymViewController: UIViewController {
     }
     
     func callApi(category: String) {
+        print(category)
         Alamofire.request("https://spajam2019-muscle.herokuapp.com/news", method: .get, parameters: ["category": category]).responseJSON { (response) -> Void in
             //print(response)
             let swiftyJsonVar = JSON(response.result.value!)
