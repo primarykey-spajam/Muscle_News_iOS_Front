@@ -16,10 +16,16 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @objc func move() {
+        print("ghoge")
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        var StartGym = segue.destination as! StartGymViewController
+        /*var StartGym = segue.destination as! StartGymViewController
         StartGym.text1 = "Text"
+         */
     }
 
     /*

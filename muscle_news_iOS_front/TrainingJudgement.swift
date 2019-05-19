@@ -22,6 +22,9 @@ class TrainingJudgement {
         self.muscleMenu = muscleMenu
         self.stateArray = []
         self.startGymVC = gymVC
+       
+        //get News
+            
         AVAudioPlayerUtil.setValue(url: "http://www.voice-pro.jp/announce/mp3/001-sibutomo.mp3")
         AVAudioPlayerUtil.play()
         
@@ -63,13 +66,13 @@ class TrainingJudgement {
         if(isSameValueArray(array: stateArray)) {
             //音楽とめる
             print("サボり")
-            startGymVC.testLabel.text = "サボり"
+            //startGymVC.testLabel.text = "サボり"
             AVAudioPlayerUtil.pause()
             
         } else {
             //音楽止まってたら、1再生
             print("サボってない")
-            startGymVC.testLabel.text = "サボってない"
+            //startGymVC.testLabel.text = "サボってない"
             AVAudioPlayerUtil.play()
         }
         self.stateArray = []
