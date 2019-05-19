@@ -21,7 +21,7 @@ class StartGymViewController: UIViewController {
         super.viewDidLoad()
         //text1に値がはいる
         train = TrainingJudgement(muscleMenu: "pushup", gymVC: self)
-        callApi(category: category)
+        callApi(category: CurrentCategor.getCategory())
         self.view.addSubview(indicatorView)
         // Do any additional setup after loading the view.
     }

@@ -10,16 +10,16 @@ import UIKit
 
 class CategoryViewController: UIViewController {
 
-    var isSelected:Bool = true
     @IBAction func pushDisaster(_ sender: UIButton) {
         var image: UIImage
-        if(isSelected) {
+        if(sender.isSelected) {
             image = UIImage(named: "off")!
         } else {
             image = UIImage(named: "on")!
         }
             sender.setBackgroundImage(image, for: .normal)
-        isSelected = !isSelected
+            sender.isSelected = !sender.isSelected
+            CurrentCategor.category[sender.tag] = sender.isSelected
     }
     override func viewDidLoad() {
         super.viewDidLoad()

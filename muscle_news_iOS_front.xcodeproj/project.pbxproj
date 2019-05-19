@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D5C873C22906CF9002E45E1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C873A22906CF9002E45E1 /* Api.swift */; };
 		0D5C873D22906CF9002E45E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C873B22906CF9002E45E1 /* ApiClient.swift */; };
+		0D98A0B12291030400988312 /* CurrentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98A0B02291030400988312 /* CurrentCategory.swift */; };
 		53023F7F2290E33B002A4685 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53023F7E2290E33B002A4685 /* Category.storyboard */; };
 		53023F812290F656002A4685 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53023F802290F656002A4685 /* CategoryViewController.swift */; };
 		5302F504229016E10006473E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302F503229014B80006473E /* MenuViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		0D5C873A22906CF9002E45E1 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		0D5C873B22906CF9002E45E1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		0D98A0B02291030400988312 /* CurrentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCategory.swift; sourceTree = "<group>"; };
 		1A134ED66C8F4341B52F26D4 /* Pods_muscle_news_iOS_frontUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muscle_news_iOS_frontUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A693D7A508DDAF8DB6373BF /* Pods-muscle_news_iOS_front.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muscle_news_iOS_front.debug.xcconfig"; path = "Pods/Target Support Files/Pods-muscle_news_iOS_front/Pods-muscle_news_iOS_front.debug.xcconfig"; sourceTree = "<group>"; };
 		53023F7E2290E33B002A4685 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				84883C0122901988001C42BE /* StartGym.storyboard */,
 				84883C03229019A0001C42BE /* StartGymViewController.swift */,
 				84883C05229044AE001C42BE /* AVAudioPlayerUtil.swift */,
+				0D98A0B02291030400988312 /* CurrentCategory.swift */,
 			);
 			path = muscle_news_iOS_front;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				0D5C873D22906CF9002E45E1 /* ApiClient.swift in Sources */,
 				84883C04229019A0001C42BE /* StartGymViewController.swift in Sources */,
 				84A36DE822905D9C005F98EB /* TrainingJudgement.swift in Sources */,
+				0D98A0B12291030400988312 /* CurrentCategory.swift in Sources */,
 				5302F504229016E10006473E /* MenuViewController.swift in Sources */,
 				0D5C873C22906CF9002E45E1 /* Api.swift in Sources */,
 				84BBC8A82290034C009B9B95 /* AppDelegate.swift in Sources */,
