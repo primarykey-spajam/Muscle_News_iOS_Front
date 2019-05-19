@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="WlG-Cr-fXX">
             <objects>
-                <viewController id="dKO-Hh-ymc" sceneMemberID="viewController">
+                <viewController id="dKO-Hh-ymc" customClass="CategoryViewController" customModule="muscle_news_iOS_front" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmm-yA-sBu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,9 @@
                                 <rect key="frame" x="21" y="151" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat1" image="災害" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="WKG-AU-Icc"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-Um-0Sm">
                                 <rect key="frame" x="20" y="44" width="335" height="44"/>
@@ -46,41 +49,65 @@
                                 <rect key="frame" x="152" y="152" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="エンタメ" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="YXr-Il-dhI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-ZY-bct">
                                 <rect key="frame" x="279" y="151" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="オリンピック" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="ACl-q8-nZd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uP-P9-Zeq">
                                 <rect key="frame" x="18" y="304" width="91" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat1" image="経済" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="Ykb-cO-jid"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-sh-OQB">
                                 <rect key="frame" x="145" y="310" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="テクノロジ" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="3lN-hU-wTO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B28-qc-JFt">
                                 <rect key="frame" x="274" y="310" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="医療" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="6ra-8k-nyn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-oY-DYU">
                                 <rect key="frame" x="24" y="462" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat1" image="グルメ" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="OKC-xH-ncr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygF-ZC-p26">
                                 <rect key="frame" x="153" y="462" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="スポーツ" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="WSu-nk-rrG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMi-1u-W28">
                                 <rect key="frame" x="280" y="462" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat2" image="天気" backgroundImage="on"/>
+                                <connections>
+                                    <action selector="pushDisaster:" destination="dKO-Hh-ymc" eventType="touchUpInside" id="Cl0-fq-41r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="災害" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmc-AI-CTs">
                                 <rect key="frame" x="44" y="245" width="35" height="21"/>
